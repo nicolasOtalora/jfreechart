@@ -32,9 +32,10 @@ public class DepartamentoDAO implements IBaseDatos<Departamento> {
 
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(query);
+            datos = new ArrayList();
 
             while (rs.next()) {
-                datos = new ArrayList();
+                
 
                 nombreProyecto = rs.getString("nom_proy");
                 total = rs.getInt("Q");
@@ -66,9 +67,9 @@ public class DepartamentoDAO implements IBaseDatos<Departamento> {
 
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(query);
+                datos = new ArrayList();
 
             while (rs.next()) {
-                datos = new ArrayList();
 
                 nombreDepto = rs.getString("nom_depto");
                 total = rs.getInt("Num");
@@ -102,9 +103,9 @@ public class DepartamentoDAO implements IBaseDatos<Departamento> {
 
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(query);
+                datos = new ArrayList();
 
             while (rs.next()) {
-                datos = new ArrayList();
 
                 nombreDepto = rs.getString("nom_depto");
                 tipo = rs.getString("tipo_contrato");
